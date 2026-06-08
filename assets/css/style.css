@@ -930,6 +930,163 @@ a {
   color: var(--color-muted);
 }
 
+.profile-panel,
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.75fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.profile-identity,
+.profile-summary,
+.contact-panel > div {
+  padding: 1.7rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 26px rgba(11, 31, 51, 0.06);
+}
+
+.profile-identity h2,
+.contact-panel h2 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.profile-identity p:not(.section-kicker),
+.contact-role {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+}
+
+.profile-summary {
+  color: var(--color-white);
+  background:
+    linear-gradient(135deg, rgba(11, 31, 51, 0.98), rgba(18, 57, 90, 0.94)),
+    url("../img/hero-industrial-kpi.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-name {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.profile-title {
+  margin: 0.75rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 700;
+}
+
+.profile-slogan {
+  margin: 1.25rem 0 0;
+  color: #ffc483;
+  font-weight: 800;
+}
+
+.competence-card {
+  height: 100%;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary-muted);
+  border-radius: 8px;
+  box-shadow: 0 10px 26px rgba(11, 31, 51, 0.06);
+}
+
+.competence-card-accent {
+  border-left-color: var(--color-accent);
+}
+
+.competence-card h3 {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.vision-panel {
+  max-width: 900px;
+  padding: 2rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.vision-panel h2 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.vision-panel p:not(.section-kicker) {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  font-size: 1.06rem;
+}
+
+.vision-quote {
+  padding: 1rem 1.2rem;
+  color: var(--color-primary) !important;
+  background: var(--color-light);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.domain-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.domain-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.65rem 0.9rem;
+  color: var(--color-primary);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(11, 31, 51, 0.05);
+  font-weight: 800;
+}
+
+.contact-panel {
+  align-items: center;
+}
+
+.contact-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list a {
+  color: var(--color-primary-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--color-accent-dark);
+}
+
 .site-footer {
   color: rgba(255, 255, 255, 0.82);
   background: var(--color-primary);
@@ -1040,6 +1197,11 @@ a {
 
   .method-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-panel,
+  .contact-panel {
+    grid-template-columns: 1fr;
   }
 
   .cta-actions {
@@ -1172,5 +1334,24 @@ a {
   .method-step,
   .deliverable-card {
     padding: 1.2rem;
+  }
+
+  .profile-identity,
+  .profile-summary,
+  .contact-panel > div,
+  .competence-card,
+  .vision-panel {
+    padding: 1.25rem;
+  }
+
+  .profile-identity h2,
+  .contact-panel h2,
+  .vision-panel h2 {
+    font-size: 1.55rem;
+  }
+
+  .domain-tags {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
