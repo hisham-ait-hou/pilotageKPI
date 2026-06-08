@@ -276,6 +276,96 @@ a {
   background: var(--color-light);
 }
 
+.demo-visual-section {
+  padding: 4.5rem 0;
+  background: var(--color-white);
+}
+
+.section-muted.demo-visual-section,
+.demo-visual-section.section-muted {
+  background: var(--color-light);
+}
+
+.demo-text-block {
+  max-width: 680px;
+}
+
+.demo-text-block h2 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.demo-text-block p:not(.section-kicker) {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  font-size: 1.06rem;
+}
+
+.demo-note {
+  display: inline-block;
+  padding: 0.75rem 0.9rem;
+  color: var(--color-primary) !important;
+  background: rgba(217, 121, 36, 0.08);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.demo-visual-card {
+  margin: 0;
+  padding: 0.75rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(11, 31, 51, 0.12);
+}
+
+.demo-visual-card-dark {
+  background: var(--color-primary);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.demo-visual-frame {
+  overflow: hidden;
+  background: var(--color-primary);
+  border-radius: 6px;
+}
+
+.demo-visual-img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.demo-visual-card:hover .demo-visual-img {
+  transform: scale(1.01);
+  filter: saturate(1.03);
+}
+
+.demo-caption {
+  margin: 0.75rem 0.25rem 0;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.demo-visual-card-dark .demo-caption {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.section-premium-banner {
+  color: var(--color-white);
+  background:
+    linear-gradient(90deg, rgba(11, 31, 51, 0.98), rgba(18, 57, 90, 0.94)),
+    url("../img/hero-industrial-kpi.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 2rem;
@@ -1307,6 +1397,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .demo-text-block {
+    max-width: 100%;
+  }
+
   .cta-actions {
     justify-content: flex-start;
   }
@@ -1327,7 +1421,30 @@ a {
     background-position: center;
   }
 
+  .page-hero .container,
+  .section-band .container,
+  .demo-visual-section .container,
+  .final-cta .container {
+    width: calc(100vw - 24px);
+    width: calc(100dvw - 24px);
+    max-width: calc(100vw - 24px);
+    max-width: calc(100dvw - 24px);
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .hero-content {
+    width: 100%;
+    max-width: 390px;
+    max-width: min(390px, calc(100dvw - 24px));
+  }
+
+  .hero-section h1,
+  .hero-subtitle,
+  .hero-text,
+  .hero-actions,
+  .hero-indicators {
+    width: 100%;
     max-width: 100%;
   }
 
@@ -1337,6 +1454,7 @@ a {
 
   .hero-subtitle {
     font-size: 1.08rem;
+    overflow-wrap: anywhere;
   }
 
   .hero-subtitle span {
@@ -1357,10 +1475,13 @@ a {
 
   .btn {
     width: 100%;
+    min-width: 0;
+    white-space: normal;
   }
 
   .section-band,
-  .page-hero {
+  .page-hero,
+  .demo-visual-section {
     padding: 3.4rem 0;
   }
 
@@ -1368,8 +1489,44 @@ a {
     font-size: 2.15rem;
   }
 
+  .page-hero h1,
+  .page-intro,
+  .page-hero-copy,
+  .section-heading,
+  .demo-text-block,
+  .large-copy,
+  .section-note {
+    width: 100%;
+    max-width: 390px;
+    max-width: min(390px, calc(100dvw - 24px));
+    overflow-wrap: break-word;
+  }
+
+  .section-heading h2,
+  .section-heading > p:not(.section-kicker),
+  .demo-text-block h2,
+  .demo-text-block p:not(.section-kicker) {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
   .section-heading h2 {
     font-size: 1.65rem;
+  }
+
+  .demo-text-block h2 {
+    font-size: 1.65rem;
+  }
+
+  .demo-text-block p:not(.section-kicker) {
+    font-size: 1rem;
+  }
+
+  .demo-visual-card {
+    width: 100%;
+    max-width: 390px;
+    max-width: min(390px, calc(100dvw - 24px));
+    padding: 0.55rem;
   }
 
   .hero-indicator {
