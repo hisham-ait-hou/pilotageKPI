@@ -39,12 +39,105 @@
   <main id="contenu" class="site-main">
     <section class="page-hero">
       <div class="container">
-        <p class="section-kicker">pilotageKPI</p>
-        <h1>Capteurs & temps réel</h1>
+        <p class="section-kicker">Capteurs & temps réel</p>
+        <h1>Capteurs industriels & pilotage temps réel</h1>
         <p class="page-intro">
-          L’intégration de capteurs industriels et de données temps réel peut se construire progressivement,
-          en partant des besoins KPI prioritaires et de la maturité des équipements.
+          L’intégration de capteurs industriels et de données temps réel se construit progressivement,
+          selon l’infrastructure, la maturité digitale et les besoins de pilotage de l’entreprise.
         </p>
+      </div>
+    </section>
+
+    <section class="section-band">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Principe technique</p>
+          <h2>Une alimentation sécurisée avant exploitation KPI</h2>
+          <p>
+            Les capteurs ne se connectent pas directement à MySQL. Ils passent par une gateway IoT, une API sécurisée
+            ou un système industriel intermédiaire avant d’alimenter les données de pilotage.
+          </p>
+          <p>
+            Cette approche permet de contrôler les flux, filtrer les données utiles, fiabiliser les formats et intégrer
+            progressivement les mesures dans les tableaux de bord KPI.
+          </p>
+        </div>
+        <div class="architecture-stack" aria-label="Architecture d’intégration capteurs">
+          <div class="architecture-step">Capteur / système industriel</div>
+          <div class="architecture-arrow" aria-hidden="true"></div>
+          <div class="architecture-step">Gateway / API sécurisée</div>
+          <div class="architecture-arrow" aria-hidden="true"></div>
+          <div class="architecture-step">Données contrôlées</div>
+          <div class="architecture-arrow" aria-hidden="true"></div>
+          <div class="architecture-step">KPI / alertes</div>
+          <div class="architecture-arrow" aria-hidden="true"></div>
+          <div class="architecture-step architecture-step-primary">Cockpit Direction</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Exemples de sources</p>
+          <h2>Des données industrielles utiles au pilotage opérationnel</h2>
+          <p>
+            Les données issues d’équipements, de systèmes industriels ou de dispositifs connectés peuvent enrichir les KPI
+            lorsque leur qualité, leur fréquence et leur usage métier sont clairement définis.
+          </p>
+        </div>
+        <div class="sensor-grid" aria-label="Exemples de données capteurs et systèmes">
+          <span>Tonnage</span>
+          <span>Pont-bascule</span>
+          <span>RFID</span>
+          <span>GPS engins</span>
+          <span>Heures moteur</span>
+          <span>Carburant</span>
+          <span>Vibration</span>
+          <span>Température</span>
+          <span>Disponibilité machine</span>
+          <span>Pointeuse</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <div class="section-heading mb-lg-0">
+              <p class="section-kicker">Déploiement progressif</p>
+              <h2>Le temps réel comme évolution maîtrisée</h2>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <p class="large-copy">
+              Le temps réel est une évolution progressive selon l’infrastructure, la maturité digitale et les besoins de
+              l’entreprise. Une première étape peut consister à fiabiliser les saisies terrain et les imports contrôlés,
+              puis à connecter certains systèmes existants, avant d’intégrer des capteurs ou flux quasi temps réel lorsque
+              leur valeur métier est démontrée.
+            </p>
+            <ul class="value-list">
+              <li>Identifier les mesures réellement utiles aux décisions.</li>
+              <li>Contrôler la qualité et la fréquence des données reçues.</li>
+              <li>Transformer les signaux techniques en KPI compréhensibles.</li>
+              <li>Déclencher des alertes adaptées aux priorités opérationnelles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band section-muted">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <p class="section-kicker">Capteurs & KPI</p>
+            <h2>Vous voulez préparer une évolution vers des données quasi temps réel ?</h2>
+            <p>Commençons par qualifier les sources disponibles, les passerelles possibles et les KPI prioritaires.</p>
+          </div>
+          <a class="btn btn-accent" href="contact.html">Demander un diagnostic</a>
+        </div>
       </div>
     </section>
   </main>
