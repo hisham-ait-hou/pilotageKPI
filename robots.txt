@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hisham-ait-hou.github.io/pilotageKPI/sitemap.xml
